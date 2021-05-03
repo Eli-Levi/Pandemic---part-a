@@ -4,6 +4,8 @@ namespace pandemic
 {
     class OperationsExpert : public Player
     {
+        public:
+        OperationsExpert(Board board, City start): Player(board, start){};
         void build();
     }
 };
