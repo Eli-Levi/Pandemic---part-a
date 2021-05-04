@@ -6,6 +6,6 @@ namespace pandemic
     {
         public:
         Researcher(Board board, City start): Player(board, start){};
-        virtual void discover_cure(Color color_name);
+        virtual Player& discover_cure(Color color_name);
     };
 };

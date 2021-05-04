@@ -2,5 +2,5 @@
 
 namespace pandemic
 {
-    void Researcher::discover_cure(Color color_name){}
+    Player& Researcher::discover_cure(Color color_name){return *this;};
 };

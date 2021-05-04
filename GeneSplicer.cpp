@@ -2,5 +2,5 @@
 
 namespace pandemic
 {
-    void GeneSplicer::discover_cure(Color color_name){}
+    Player& GeneSplicer::discover_cure(Color color_name){return *this;};
 };

@@ -1,4 +1,6 @@
 #include "Player.hpp"
+#include "Board.hpp"
+
 
 namespace pandemic
 {
@@ -6,6 +8,6 @@ namespace pandemic
     {
         public:
         GeneSplicer(Board board, City start): Player(board, start){};
-        void discover_cure(Color color_name){}
+        virtual Player& discover_cure(Color color_name);
     };
 };

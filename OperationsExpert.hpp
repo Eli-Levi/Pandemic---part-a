@@ -1,4 +1,6 @@
 #include "Player.hpp"
+#include "Board.hpp"
+
 
 namespace pandemic
 {
@@ -6,6 +8,7 @@ namespace pandemic
     {
         public:
         OperationsExpert(Board board, City start): Player(board, start){};
-        void build();
-    }
+        virtual Player& build();
+        Player& take_cards(City city_name){return *this;};
+    };
 };

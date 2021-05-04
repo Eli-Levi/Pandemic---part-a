@@ -6,6 +6,6 @@ namespace pandemic
     {
         public:
         Virologist(Board board, City start): Player(board, start){};
-        virtual void treat(City city_name);
+        virtual Player& treat(City city_name);
     };
 };

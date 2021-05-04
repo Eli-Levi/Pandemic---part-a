@@ -2,5 +2,5 @@
 
 namespace pandemic
 {
-    void build(){};
+    Player& OperationsExpert::build(){return *this;};
 };

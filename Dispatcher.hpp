@@ -1,4 +1,5 @@
 #include "Player.hpp"
+#include "Board.hpp"
 
 namespace pandemic
 {
@@ -6,6 +7,6 @@ namespace pandemic
     {
         public:
         Dispatcher(Board board, City start): Player(board, start){};
-        Player &fly_direct(City city_name);
+        virtual Player &fly_direct(City city_name);
     };
 };

@@ -2,5 +2,5 @@
 
 namespace pandemic
 {
-   void FieldDoctor::treat(City city_name){};
+   Player& FieldDoctor::treat(City city_name){return *this;};
 };

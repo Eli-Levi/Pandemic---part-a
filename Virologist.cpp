@@ -2,5 +2,5 @@
 
 namespace pandemic
 {
-    void Virologist::treat(City city_name){};
+    Player& Virologist::treat(City city_name){return *this;};
 };
