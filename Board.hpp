@@ -28,7 +28,8 @@ namespace pandemic
                 cities_cubes.at(i) = 0;
             }
         };
-        int& operator[](City city_name);
+        int& operator[](City city_name) const;
+        int operator[](City city_name);
         friend std::ostream &operator<<(std::ostream &os, const Board &map_state);
         bool is_clean();
         void remove_cures();
